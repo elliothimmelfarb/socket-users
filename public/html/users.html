@@ -1,0 +1,12 @@
+<h1>Users</h1>
+
+<table class="table">
+  <tbody>
+    <tr ng-repeat='user in users track by $index'>
+      <td>{{user.email}}</td>
+      <td>
+        <button ng-click='poke(user._id)' class="btn btn-info btn-sm">Poke</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
